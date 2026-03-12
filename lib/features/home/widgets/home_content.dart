@@ -12,9 +12,10 @@ class HomeContent extends StatelessWidget {
   Widget build(BuildContext context) {
     final luminance = color.computeLuminance();
 
-    return Scaffold(
-      backgroundColor: color,
-      body: Center(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 140),
+      color: color,
+      child: Center(
         child: Text(
           'Hello there',
           style: TextStyle(
