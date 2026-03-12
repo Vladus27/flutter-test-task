@@ -6,14 +6,23 @@ class HomeContent extends StatelessWidget {
   const HomeContent({this.color = Colors.white, super.key});
 
   /// background screen color
-  final Color? color;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
+    final luminance = color.computeLuminance();
+
     return Scaffold(
       backgroundColor: color,
-      body: const Center(
-        child: Text('Hello there'),
+      body: Center(
+        child: Text(
+          'Hello there',
+          style: TextStyle(
+            color: luminance > 0.4 ? Colors.black : Colors.white,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
     );
   }

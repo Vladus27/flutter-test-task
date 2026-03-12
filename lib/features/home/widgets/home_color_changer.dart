@@ -15,10 +15,10 @@ class HomeColorChanger extends StatefulWidget {
 }
 
 class _HomeColorChangerState extends State<HomeColorChanger> {
-  Color? _color;
   final _random = math.Random();
   static const int _maxAlphaValue = 255; // oppacity
   static const int _maxColorChannel = 256; // exclusive upper bound for channels
+  Color _color = Colors.white; // initial background color
 
   Color _getRandomColor() {
     return Color.fromARGB(
