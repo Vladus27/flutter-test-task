@@ -12,19 +12,16 @@ This app allows the user to change the background color by tapping anywhere on t
 ## Project Structure
 
 lib/
-  features/home/
-    utils/
-      color_generator.dart
-    view/
-      home_screen.dart
-    widgets/
-      home_color_changer.dart
-      home_content.dart
-    home.dart
-  main.dart
-  my_app.dart
+├── features/
+│ └── home/ # Home screen feature
+│ ├── utils/ # Business logic
+│ ├── view/ # Screens
+│ └── widgets/ # UI components
+├── main.dart
+└── my_app.dart
+
 test/
-  color_test.dart
+└── color_test.dart # Unit tests
 
 # Preview
 
