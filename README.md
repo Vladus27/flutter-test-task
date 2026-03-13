@@ -1,14 +1,31 @@
-# flutter_project_template
-[![flutter_project_template](https://nokycucwgzweensacwfy.supabase.co/functions/v1/get_project_badge?projectId=149)](https://nokycucwgzweensacwfy.supabase.co/functions/v1/get_project_url?projectId=149)
+# FLutter Color Changer
+This app allows the user to change the background color by tapping anywhere on the screen. It can generate 16,777,216 different colors.
 
-📖 Template for flutter projects using solid_lints, CI for tests and analysis.
+## Features
 
-- Uses latest stable flutter
-- Repo name as your project name
-- Organization from your profile email address or default
+- Change background color on tap with implicit animation
+- Random color generation
+- Text is easy to read on bright and dark backgrounds
+- Clean project structure
+- Unit test for color generator
 
-# Usage
-1. Press "Use this template" on the menu.
-2. Fill Github form with your new repo name and press "Create repository from template"
-3. Wait for it to be created and set up action is complete. In a couple of minutes, you'll see the flutter project created in your repo once Github Actions are complete.
-4. Clone and code.
+## Project Structure
+
+lib/
+  features/home/
+    utils/
+      color_generator.dart
+    view/
+      home_screen.dart
+    widgets/
+      home_color_changer.dart
+      home_content.dart
+    home.dart
+  main.dart
+  my_app.dart
+test/
+  color_test.dart
+
+# Preview
+
+https://github.com/user-attachments/assets/b4d5fc7d-dfa8-4631-aa7d-adbff9db1ab9
